@@ -46,14 +46,14 @@ public class Main {
                  // 책목록 확인
                  if (mybook.available == true) {
 //              System.out.println("\n 책목록 : \n [ -제목: " + mybook.title + " / - 형태: "+mybook.type+ " / - 분류: " +mybook.category+" / - 작가: "+mybook.author+ " / -출판사 : "+mybook.publisher+ " / - 대여가능여부 : " +mybook.available+"] \n");
-                     System.out.println("대여가능 책 : 1번" + mybook);
+                     System.out.println("대여가능 책 : 1번 " + mybook);
                  } else {
-                     System.out.println("대여불가   : 1번[" + mybook.title + "]은 지금 대여 불가합니다.\n");
+                     System.out.println("대여불가 책 : 1번[" + mybook.title + "]은 지금 대여 불가합니다.\n");
                  }
                  // DVD 목록
                  if (myDVD.available == true) {
 //              System.out.println("\n 책목록 : \n [ -제목: " + myDVD.title + " / - 형태: " + myDVD.type + " / - 분류: " + myDVD.category + " ");
-                     System.out.println("대여가능 DVD : 2번" + myDVD);
+                     System.out.println("대여가능 DVD : 2번 " + myDVD);
                  } else {
                      System.out.println("대여불가 DVD : 2번[" + myDVD.title + "]은 지금 대여 불가합니다.\n");
                  }
@@ -102,7 +102,7 @@ public class Main {
 
                      } else if (itemNum == 2) { if (myDVD.available == true) {
                          System.out.println("대여 가능 상태입니다");
-                     } else if (mybook.available == false) {
+                     } else if (myDVD.available == false) {
                         myDVD.returnItem();
                      }
 
